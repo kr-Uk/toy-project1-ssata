@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSAFY 에브리타임 - 게시글 목록</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- 상단 네비게이션 바 -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <h1 class="logo" onclick="location.href='main.html'">SSAFY 에브리타임</h1>
+    </div>
+    <div class="navbar-right">
+      <input type="text" class="search-bar" placeholder="게시글 검색...">
+      <button class="nav-btn" onclick="location.href='mypage.html'">내정보</button>
+      <button class="nav-btn logout">로그아웃</button>
+    </div>
+  </header>
+
+  <!-- 게시글 목록 -->
+  <main class="post-container">
+    <div class="post-header">
+      <h2>자유게시판</h2>
+      <button class="write-btn" onclick="location.href='post-write.html'">글쓰기</button>
+    </div>
+
+    <table class="post-table">
+      <thead>
+        <tr>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>게시일</th>
+          <th>댓글</th>
+          <th>좋아요</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onclick="location.href='post-detail.html'">
+          <td class="post-title">오늘 점심 뭐 먹지?</td>
+          <td>익명</td>
+          <td>2025-10-20</td>
+          <td>4</td>
+          <td>12</td>
+        </tr>
+        <tr onclick="location.href='post-detail.html'">
+          <td class="post-title">코딩테스트 준비 어디서 해요?</td>
+          <td>익명</td>
+          <td>2025-10-19</td>
+          <td>3</td>
+          <td>8</td>
+        </tr>
+        <tr onclick="location.href='post-detail.html'">
+          <td class="post-title">프로젝트 팀원 구합니다!</td>
+          <td>익명</td>
+          <td>2025-10-18</td>
+          <td>7</td>
+          <td>15</td>
+        </tr>
+        <tr onclick="location.href='post-detail.html'">
+          <td class="post-title">SSAFY 10기 근황 공유</td>
+          <td>익명</td>
+          <td>2025-10-17</td>
+          <td>5</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

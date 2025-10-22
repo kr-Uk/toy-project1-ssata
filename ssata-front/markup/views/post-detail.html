@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSAFY 에브리타임 - 게시글 상세</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- 상단 네비게이션 바 -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <h1 class="logo" onclick="location.href='main.html'">SSAFY 에브리타임</h1>
+    </div>
+    <div class="navbar-right">
+      <input type="text" class="search-bar" placeholder="게시글 검색...">
+      <button class="nav-btn" onclick="location.href='mypage.html'">내정보</button>
+      <button class="nav-btn logout">로그아웃</button>
+    </div>
+  </header>
+
+  <!-- 게시글 상세 영역 -->
+  <main class="detail-container">
+    <section class="post-detail-card">
+      <h2 class="post-title">오늘 점심 뭐 먹지?</h2>
+      <div class="post-meta">
+        <span class="post-writer">작성자: 익명</span>
+        <span class="post-date">작성일: 2025-10-20 13:25</span>
+      </div>
+      <div class="post-content">
+        오늘 너무 배고픈데...  
+        다들 점심 뭐 먹나요? 추천 좀 해주세요 🍱  
+        학식은 질렸어요 😭
+      </div>
+
+      <div class="post-actions">
+        <button class="like-btn">❤️ 좋아요 <span class="like-count">12</span></button>
+      </div>
+    </section>
+
+    <!-- 댓글 섹션 -->
+    <section class="comment-section">
+      <h3>💬 댓글</h3>
+      <div class="comment-list">
+        <div class="comment-item">
+          <p class="comment-writer">익명</p>
+          <p class="comment-content">저는 김치찌개 먹었어요!</p>
+          <p class="comment-date">2025-10-20 13:45</p>
+        </div>
+        <div class="comment-item">
+          <p class="comment-writer">익명</p>
+          <p class="comment-content">닭갈비 추천합니다!</p>
+          <p class="comment-date">2025-10-20 14:02</p>
+        </div>
+      </div>
+
+      <!-- 댓글 작성 -->
+      <div class="comment-write">
+        <textarea placeholder="댓글을 입력하세요..." class="comment-input"></textarea>
+        <button class="comment-btn">댓글 달기</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
